@@ -1,26 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Fade animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.3s ease-in;
-}
-
-/*  FORCE MONACO TO STAY INSIDE */
-.monaco-editor,
-.monaco-editor .overflow-guard {
-  max-width: 100% !important;
-}
-
-/*  Animated subtle grid background */
+/* Background grid */
 body {
   background-color: #020617;
   background-image:
@@ -29,28 +11,7 @@ body {
   background-size: 40px 40px;
 }
 
-/*  Glow effects */
-.glow-blue {
-  box-shadow: 0 0 15px rgba(59,130,246,0.4);
-}
-
-.glow-purple {
-  box-shadow: 0 0 15px rgba(168,85,247,0.4);
-}
-
-/*  Smooth transitions everywhere */
-* {
-  transition: all 0.2s ease-in-out;
-}
-
-body {
-  background-color: #020617;
-  background-image:
-    linear-gradient(rgba(59,130,246,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,0.08) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
+/* Smooth transitions */
 * {
   transition: all 0.2s ease-in-out;
 }
